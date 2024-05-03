@@ -10,15 +10,19 @@ const routes: Routes = [
   // { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   // {
   //   path: 'dashboard',
-  //   loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
+  //   loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule),
+  //   children: [
+  //     { path: 'overview', component: OverviewComponent },
+  //     { path: 'stats', component: StatsComponent }
+  //   ]
   // },
   // {
   //   path: 'products',
-  //   loadChildren: () => import('./products/products.module').then(m => m.ProductsModule)
-  // },
-  // {
-  //   path: 'orders',
-  //   loadChildren: () => import('./orders/orders.module').then(m => m.OrdersModule)
+  //   loadChildren: () => import('./products/products.module').then(m => m.ProductsModule),
+  //   children: [
+  //     { path: 'list', component: ProductListComponent },
+  //     { path: 'details/:id', component: ProductDetailsComponent }
+  //   ]
   // }
 ];
 
