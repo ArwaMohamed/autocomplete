@@ -1,0 +1,5 @@
+<input type="text" [formControl]="searchTerm" placeholder="Search countries...">
+<ul>
+  <li *ngFor="let country of countries$ | async" [appHighlightFirstElement]="true">{{ country }}</li>
+  <li *ngIf="noDataFound" [appHighlightFirstElement]="false">No data found</li>
+</ul>

@@ -1,0 +1,17 @@
+li{
+  list-style: none;
+  padding: 4px;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+  border-radius: 10px;
+}
+
+input[type=text]:focus {
+  background-color: rgba(128, 128, 128, 0.388);
+}
